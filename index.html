@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='./styles.css' rel='stylesheet'> 
+    <title>Hebraica Pet Club</title>
+</head>
+<body>
+    <header>
+        <div class='flex-container' id='header-container'>
+            <div id='logo-title'>
+                <figure id='logo-img'>
+                    <img src='./images/logo/HEBRAICA.png' alt='logotipo da hebraica pet club'>
+                </figure>
+                <h1 id='main-title'>HEBRAICA PET CLUBE</h1>
+            </div>
+
+            <nav id='header-navbar'>
+                <ul>
+                    <li><a href='#description-section'>O Clube</a></li>
+                    <li><a href='#events-section'>Eventos</a></li>
+                    <li><a href='#location-section'>Localização</a></li>
+                    <li><a href='#contact-section'>Contato</a></li>
+                    <li><a href='#joinus-section'>Faça Parte</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id='content-sections-container'>
+        <section id='description-section'>
+            <h1>O Clube</h1>
+            <p id='first-p'><span>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</span></p>
+            <p id='second-p'><span>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</span></p>
+            <p id='third-p'><span>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</span></p>
+            <img id='first-img' src='./images/content/aufabeto.jpg'>
+            <img id='second-img' src='./images/content/josh-rakower-518441-unsplash.jpg'>
+            <img id='third-img' src='./images/content/pousada-gaia-viva-boia.jpg'>
+        </section>
+
+        <section id='events-section'>
+            <h1>Próximos Eventos</h1>
+
+            <div id='event-cards-container'>
+                <div id='first-event' class='events-cards'>
+                    <img src='./images/events/adocao-evento.jpg'>
+                    <h2>Feira de Adoção de Animais</h2>
+                    <h3>20/11/21 - 10h</h3>
+                </div>
+
+                <div id='second-event' class='events-cards'>
+                    <img src='./images/events/concurso-beleza.jpg'>
+                    <h2>Concurso de Beleza Pet</h2>
+                    <h3>23/11/21 - 14h</h3>
+                </div>
+
+                <div id='third-event' class='events-cards'>
+                    <img src='./images/events/pet-park-shopping-mooca-em-sp-crystal-pet-spa-13.jpg'>
+                    <h2>Piquenique Animal</h2>
+                    <h3>27/11/21 - 9h</h3>
+                </div>
+
+                <div id='fourth-event' class='events-cards'>
+                    <img src='./images/events/piscina-bolinha.jpg'>
+                    <h2>Piscina de Bolinhas</h2>
+                    <h3>30/11/21 - 15h</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id='location-section'>
+            <h1>Localização</h1>
+
+            <div id='location-container'>
+                <img src='./images/location/aeroporto-campo-de-marte---mapa-de-localização.jpg'>
+
+                <div id='location-text-container'>
+                    <h2>NOSSA LOCALIZAÇÃO</h2>
+                    <p>Rua Fictícia, n 123</p>
+                    <p>Bairro Fictício Imaginário</p>
+                    <p>São Paulo - SP</p>
+                    <p>Brasil</p>
+                </div>
+            </div>
+        </section>
+
+        <section id='contact-section'>
+            <h1>fale conosco</h1>
+            <h2>Nossos contatos:</h2>
+            <p id='contact-first-p'>e-mail:<span>fictícioMail@hebraicapetclub.org.br</span></p>
+            <p id='contact-second-p'>telefone:<span>+55(11)98765-4321</span></p>
+            <p id='contact-third-p'>WhatsApp:<span>+55(11)97864-5312</span></p>
+            <img src='./images/icons/contact-icon.png'>
+        </section>
+
+        <section id='joinus-section'>
+            <h1>Faça Parte</h1>
+            <h2>Junte-se ao nosso clube e aproveite!</h2>
+            <div id='join-form-container'>
+                <form action='./example.html' method="post">
+                    <div class='input' id='input-name'>
+                        <label for='nome'>Nome completo:</label>
+                        <input type='text' name='nome'>
+                    </div>
+                    <div class='input' id='input-email'>
+                        <label for='email'>E-mail:</label>
+                        <input type='text' name='email'>
+                    </div>
+                    <div class='input' id='input-birth'>
+                        <label for='date-of-birth'>Data de nascimento:</label>
+                        <input type='number' name='date-of-birth'>
+                    </div>
+                    <div id='submit-button'>
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id='footer-links-container'>
+            <img src='./images/icons/round-icon-fb.png'>
+            <img src='./images/icons/round-icon-ig.png'>
+            <img src='./images/icons/round-icon-yt.png'>
+        </div>
+
+        <h2>&copy;Hebracia Pet Club.</h2>
+    </footer>
+</body>
+</html>

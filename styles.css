@@ -1,0 +1,673 @@
+@font-face {
+    font-family: 'Findel';
+    src: url('./fonts/Findel/Findel-Display-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cerebri';
+    src: url('./fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.otf') format('opentype'),
+        url('./fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf') format('truetype');
+}
+
+* {
+    max-width: 100%;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {margin: 0;}
+
+.flex-container {
+    display: flex;
+}
+
+header {
+    max-height: 10.3rem;
+    padding-top: 1rem;
+}
+
+main {
+    background-color: #f2f1ec;
+}
+
+#header-container {
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #6c9286;
+    padding-bottom: 0.8rem;
+}
+
+#logo-title {
+    margin-left: 1.5rem;
+    display: flex;
+    max-width: 40%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#logo-img {
+    margin: 0;
+    padding: 0;
+    max-width: 9.5rem;
+    min-width: 7.5rem;
+    height: auto;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+#logo-img img {
+    max-width: 100%;
+    min-width: 7.5rem;
+    height: auto;
+    overflow: hidden;
+}
+
+#main-title {
+    font-family: 'Findel';
+    font-size: 3rem;
+    color: #365b6d;
+}
+
+#header-navbar {
+    max-width: 50%;
+    margin-right: 10rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-navbar ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#header-navbar li {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+#header-navbar li a {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #365b6d;
+}
+
+#header-navbar li a:hover{
+    color: #289dd2;
+    text-decoration: none;
+}
+
+#description-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 10rem;
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+    align-content: stretch;
+    background-color: #41c1ba;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+#description-section h1 {
+    grid-area: 1 / 1 / 2 / 13;
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+#description-section p {
+    font-family: 'Cerebri';
+    font-size: 2rem;
+    letter-spacing: 0.75rem;
+    z-index: 1;
+    color: #f7f7f7;
+}
+
+#description-section img {
+    max-width: 100%;
+    min-width: 45.223rem;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #f2f1ec;
+    border-radius: 40%;
+}
+
+#first-img {
+    grid-area: 2 / 8 / 5 / 12;
+}
+
+#first-p {
+    grid-area: 3 / 2 / 5 / 9;
+}
+
+#second-img {
+    grid-area: 4 / 2 / 7 / 6;
+}
+
+#second-p {
+    grid-area: 5 / 5 / 7 / 12;
+}
+
+#third-img {
+    grid-area: 6 / 8 / 9 / 12;
+}
+
+#third-p {
+    grid-area: 7 / 2 / 9 / 9;
+}
+
+#event-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: stretch;
+    padding: 4rem 0;
+}
+
+#events-section {
+    background-color: #f2f1ec;
+    margin-top: 0;
+    padding-top: 4rem;
+}
+
+#events-section h1{
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: #6c9286;
+}
+
+#events-section img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 0.01rem solid #289dd2;
+    border-radius: 15%;
+    min-width: 10rem;
+}
+
+.events-cards {
+    max-width: 50rem;
+    min-width: 23%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+#events-section h2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 100%;
+    max-height: 2.7rem;
+}
+
+#events-section h3 {
+    text-align: center;
+    font-family: 'Cerebri';
+    font-size: 2rem;
+}
+
+#location-section {
+    background-color: white;
+    padding-bottom: 4rem;
+}
+
+#location-section h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: #6c9286;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+#location-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#location-container img {
+    max-width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+
+#location-text-container {
+    max-width: 30%;
+    color: #365b6d;
+    margin-right: 10rem;
+}
+
+#location-text-container h2 {
+    font-family: 'Montserrat';
+    font-size: 3rem;
+}
+
+#location-text-container p {
+    font-family: 'Cerebri';
+    font-size: 2.5rem;
+}
+
+#contact-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 1.6rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 3rem;
+    min-height: 30rem;
+}
+
+#contact-section h1 {
+    font-family: 'Montserrat';
+    font-size: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    grid-area: 1 / 1 / 4 / 7;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-section h2 {
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    color: black;
+    grid-area: 4 / 2 / 6 / 4;
+}
+
+#contact-section img {
+    height: 100%;
+    max-width: auto;
+    overflow: hidden;
+    grid-area: 6 / 2 / 9 / 4;
+    justify-self: center;
+    margin-right: 4rem;
+    margin-top: 4rem;
+}
+
+#contact-section p {font-family: 'Cerebri'; font-size: 1.5rem; text-decoration: underline;}
+
+#contact-first-p {
+    grid-area: 4 / 4 / 6 / 6;
+}
+
+#contact-second-p {
+    grid-area: 6 / 4 / 8 / 6;
+}
+
+#contact-third-p {
+    grid-area: 8 / 4 / 10 / 6;
+}
+
+#joinus-section {
+    background-color: #6c9286;
+    min-height: 30rem;
+    padding-bottom: 4rem;
+}
+
+#joinus-section h1 {
+    font-family: 'Montserrat';
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 3.5rem;
+    text-transform: capitalize;
+    color: #f7f7f7;
+}
+
+#joinus-section h2 {
+    font-family: 'Cerebri';
+    font-size: 3rem;
+    color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#join-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.input {
+    width: 60%;
+    margin: 2rem 0;
+    margin-left: 10rem;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+label {
+    font-family: 'Cerebri';
+    font-size:2rem;
+    color: #f7f7f7;
+    display: block;
+}
+
+input {
+    min-width: 90%;
+    border: 1px solid lightblue;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+#submit-button {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#submit-button button {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border: 1px solid #289dd2;
+    border-radius: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#footer-links-container {
+    max-width: 40%;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+
+#footer-links-container img {
+    width: 15%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 3rem;
+}
+
+footer h2 {
+    font-family: 'Findel';
+    font-size: 3rem;
+    color: #365b6d;
+    margin-left: 5rem;
+}
+
+@media only screen and (max-width: 1145px) {
+    #main-title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 994px) {
+    #description-section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 10rem;
+        gap: 1rem;
+        justify-items: center;
+        align-items: stretch;
+        align-content: stretch;
+        background-color: #41c1ba;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+    }
+    
+    #description-section h1 {
+        grid-area: 1 / 1 / 2 / 13;
+        font-size: 4rem;
+        font-family: 'Montserrat';
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        color: #f7f7f7;
+    }
+    
+    #description-section p {
+        font-family: 'Cerebri';
+        font-size: 2rem;
+        letter-spacing: 0.75rem;
+        z-index: 1;
+        color: #f7f7f7;
+    }
+    
+    #description-section img {
+        max-width: 70%;
+        min-width: 45.223rem;
+        height: auto;
+        overflow: hidden;
+        border: 1px solid #f2f1ec;
+        border-radius: 40%;
+    }
+    
+    #first-img {
+        grid-area: 2 / 8 / 5 / 11;
+    }
+    
+    #first-p {
+        grid-area: 3 / 2 / 5 / 9;
+    }
+    
+    #second-img {
+        grid-area: 4 / 2 / 7 / 5;
+    }
+    
+    #second-p {
+        grid-area: 5 / 4 / 7 / 12;
+    }
+    
+    #third-img {
+        grid-area: 6 / 8 / 9 / 11;
+    }
+    
+    #third-p {
+        grid-area: 7 / 2 / 9 / 8;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #description-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #description-section img {display: none;}
+
+    #description-section p {
+        padding-top: 7rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 7rem;
+        min-height: 15rem;
+        border-top: 1px solid #f2f1ec;
+        color: rgb(255, 255, 255);
+        text-shadow: #000957 0.17rem 0.17rem;
+        margin: 0;
+        line-height: 3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #description-section span {
+        max-width: 45%;
+        padding: 1rem 5rem;
+    }
+
+    #first-p {
+        background-image: url('./images/content/aufabeto.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #second-p {
+        background-image: url('./images/content/josh-rakower-518441-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: end;
+    }
+
+
+    #third-p {
+        background-image: url('./images/content/pousada-gaia-viva-boia.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+    #header-navbar {
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (max-width: 866px) {
+    #header-navbar {
+        margin-right: 2rem;
+    }
+
+    #header-navbar li a {
+        font-size: 1.3rem;
+    }
+
+    #location-container {
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+    }
+
+    #location-container img {
+        min-width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #location-text-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #location-text-container h2 {
+        font-size: 2rem;
+    }
+
+    #location-text-container p {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    #contact-section h2 {font-size: 2rem;}
+
+    #contact-section p {font-size: 1.2rem;}
+}
+
+@media only screen and (max-width: 571px) {
+    #header-navbar {
+        max-width: 40%;
+        margin: 0;
+    }
+
+    #header-navbar li a {
+        font-size: 1rem;
+    }
+
+    #logo-title {
+        max-width: 60%;
+    }
+
+    #logo-img {
+        max-width: 2rem;
+    }
+
+    #main-title {
+        font-size: 1.5rem;
+    }
+
+    footer img {
+        min-width: 3rem;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #contact-section {
+        gap: 0.2rem;
+    }
+
+    #contact-section h2 {
+        font-family: 'Montserrat';
+        font-size: 2rem;
+        color: black;
+        grid-area: 5 / 1 / 7 / 3;
+        padding-top: 1rem;
+        text-align: end;
+    }
+    
+    #contact-section img {
+        height: 100%;
+        max-width: auto;
+        overflow: hidden;
+        grid-area: 7 / 2 / 10 / 3;
+        justify-self: center;
+        margin-right: 4rem;
+        margin-top: 4rem;
+    }
+
+    #contact-section p {font-family: 'Cerebri'; font-size: 1.3rem; text-decoration: underline; margin-left: 1rem;}
+
+    #contact-first-p {
+        grid-area: 5 / 3 / 7 / 6;
+    }
+    
+    #contact-second-p {
+        grid-area: 7 / 3 / 9 / 6;
+    }
+    
+    #contact-third-p {
+        grid-area: 9 / 3 / 11 / 6;
+    }
+}
